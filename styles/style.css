@@ -9,8 +9,14 @@
   font-family: "Arvo";
 }
 
+h1 {
+  margin-bottom: 1.2rem;
+}
+
 header {
+  padding: 1.2rem 8.2rem 1.2rem 8.2rem;
   height: 70vh;
+  width: auto;
   background-color: #1F2937;
 }
 header nav {
@@ -20,7 +26,7 @@ header nav {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 header nav ul li {
   font-size: 18px;
@@ -38,6 +44,23 @@ header .hero-main {
 header .secondary-text {
   font-size: 18px;
   color: #E5E7EB;
+}
+header .flex-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+header .flex-item {
+  flex: 1;
+}
+header .flex-item img {
+  display: block;
+  max-width: 80%;
+}
+header .flex-item.first p {
+  margin: 1rem auto 1rem auto;
 }
 
 button {

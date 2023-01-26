@@ -14,8 +14,14 @@ $button-color: #3882f6;
     font-family: $Arvo;
 }
 
+h1{
+    margin-bottom: 1.2rem;
+}
+
 header{
+    padding: 1.2rem 8.2rem 1.2rem 8.2rem;
     height: 70vh;
+    width: auto;
     background-color: $dark-background-color;
     nav{
         display: flex;
@@ -23,7 +29,7 @@ header{
         ul{
             list-style: none;
             display: flex;
-            gap: 1rem;
+            gap: 3rem;
             li{
                 font-size: 18px;
                 color: $secondary-text-color;
@@ -42,6 +48,25 @@ header{
     .secondary-text{
         font-size: 18px;
         color:$secondary-text-color;
+    }
+    .flex-container{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+    .flex-item{
+        flex: 1;
+        img{
+            display: block;
+            max-width: 80%;
+        }
+    }
+    .flex-item.first{
+        p{
+            margin: 1rem auto 1rem auto;
+        }
     }
 }
 
