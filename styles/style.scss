@@ -1,9 +1,58 @@
-*{
+$Arvo: 'Arvo';
+$dark-background-color: #1F2937;
+$secondary-text-color: #E5E7EB;
+$button-color: #3882f6;
+@font-face{
+    font-family: 'Arvo';
+    src: url(../fonts/Arvo-Regular.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $Arvo;
 }
-@font-face {
-    font-family: 'Arvo', serif;
-    src: url(../fonts/Arvo-Regular.ttf);
+
+header{
+    height: 70vh;
+    background-color: $dark-background-color;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            li{
+                font-size: 18px;
+                color: $secondary-text-color;
+            }
+        }
+    }
+    .header-logo{
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+    .hero-main{
+        font-size: 48px;
+        font-weight: bold;
+        color: #F9FAF8;
+    }
+    .secondary-text{
+        font-size: 18px;
+        color:$secondary-text-color;
+    }
 }
+
+button{
+    background-color: $button-color;
+    border-radius: 0.5rem;
+    border-color: $button-color;
+    color: $secondary-text-color;
+    padding: 0.18rem;
+    width: 4.7rem;
+    max-width: 5rem;
+    max-height: auto;
+}
+
