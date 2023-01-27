@@ -33,6 +33,15 @@ header nav ul li {
   font-size: 18px;
   color: #E5E7EB;
 }
+header nav ul li a {
+  color: #E5E7EB;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  font-size: 19px;
+  transition: 50ms;
+  text-decoration: underline;
+}
 header .header-logo {
   font-size: 24px;
   color: #F9FAF8;
@@ -73,6 +82,10 @@ button {
   width: 4.7rem;
   max-width: 5rem;
   max-height: auto;
+}
+button:hover {
+  color: #1F2937;
+  transition: 50ms;
 }
 
 main {
