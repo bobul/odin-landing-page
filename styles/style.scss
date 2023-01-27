@@ -75,9 +75,79 @@ button{
     border-radius: 0.5rem;
     border-color: $button-color;
     color: $secondary-text-color;
-    padding: 0.18rem;
+    padding: 0.2rem 0.7rem; 
     width: 4.7rem;
     max-width: 5rem;
     max-height: auto;
 }
 
+main{
+    height: 150vh;
+    width: auto;
+    .flex-images{
+        .random-info h2{
+            padding-top: 1rem;
+            padding-bottom: 4.2rem;
+            text-align: center;
+        }
+        .img-container{
+            margin-left: 6rem;
+            margin-right: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // gap: 1.5rem;
+            // padding-bottom: 4rem;
+            .img-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                p{
+                    text-align: center;
+                    max-width: 60%;
+                }
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 1.5rem;
+                border-width: 0.15rem;
+                border-color: $button-color;
+                border-style: solid;
+            }
+        }
+    }
+    .quote{
+        margin-top: 2rem;
+        height:50%;
+        background-color: $secondary-text-color;
+        // padding: 5rem 2rem 5rem 2rem;
+        p{
+            
+            padding: 7rem 17rem 2rem 17rem;
+            font-size: 36px;
+            font-style: italic;
+            color: $dark-background-color;
+        }
+        h2{
+            // margin-top: 5rem;
+            padding-left: 60%;
+        }
+    }
+}
+
+footer{
+    margin-top: 2rem;
+    height: 60vh;
+    .sign-up-container{
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: $button-color;
+        display: flex;
+    }
+    .sign-up-button{
+        border-color: white;
+    }
+}
